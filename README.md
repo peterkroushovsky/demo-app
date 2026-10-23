@@ -1,5 +1,7 @@
 # demo-app
 
+[![CI](https://github.com/peterkroushovsky/demo-app/actions/workflows/ci.yml/badge.svg)](https://github.com/peterkroushovsky/demo-app/actions/workflows/ci.yml)
+
 Tiny HTTP service used in my [homelab](https://github.com/peterkroushovsky/homelab)
 to practise containers, Kubernetes, CI/CD and GitOps. Go standard library only.
 
