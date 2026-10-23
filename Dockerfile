@@ -21,6 +21,6 @@ RUN CGO_ENABLED=0 GOOS=$TARGETOS GOARCH=$TARGETARCH \
 # ---- Runtime stage: no shell, no package manager, non-root user ----
 FROM gcr.io/distroless/static-debian13:nonroot
 COPY --from=build /out/demo-app /demo-app
-USER nonroot:nonroot
+USER 65532:65532
 EXPOSE 8080
 ENTRYPOINT ["/demo-app"]
